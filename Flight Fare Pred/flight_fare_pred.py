@@ -9,7 +9,7 @@ def ml_gui():
     
     import pandas as pd
     #read cleaned dataset
-    dataset=pd.read_excel('fareset.xlsx')
+    dataset=pd.read_excel('dataset.xlsx')
     
     #feature selection
     X = dataset.loc[:,['Total_Stops', 'journey_day', 'journey_month', 'dep_hour',
@@ -395,7 +395,7 @@ if __name__ == '__main__':
     combo4.grid(row=1,column=1)
     frame3.place(x='70',y='290')
 
-    button=Button(window,text='Submit',bg='blue',command=ml_gui)
+    button=Button(window,text='Submit',bg='green',command=ml_gui)
     button.place(x='220',y='380')
     
 
